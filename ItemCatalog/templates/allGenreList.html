@@ -1,0 +1,28 @@
+{% extends "main.html" %}
+{% block content %}
+	<div class="row divider blue">
+		<div class="col-md-12"></div>
+	</div>
+	<div class="row banner main">
+		<div class="col-md-1"></div>
+		<div class="col-md-11 padding-none">
+			<h1>MOVIES</h1>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div>
+  	 {% if 'username' not in session %}
+    	<button onclick="window.location.href = '{{ url_for('showLogin') }}';">Login</button>
+			<hr>
+		{% else %}
+			<button onclick="window.location.href = '{{ url_for('gdisconnect') }}';">Logout</button>
+			<hr>
+		{% endif %}
+  </div>
+
+	{% for i in list %}
+			<a href = '{{url_for('showGenre', genre_id = i.id) }}'>{{i.name}}</a><br>
+			<hr><br><hr>
+		{% endfor %}
+{% endblock %}
