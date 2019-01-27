@@ -104,3 +104,13 @@ application.secret_key = 'super_secret_key'`
 - Install git.
 - Clone and setup your Item Catalog project from the Github repository you created earlier in this Nanodegree program.
 - Set it up in your server so that it functions correctly when visiting your server’s IP address in a browser.
+
+##Third party resources used:
+- https://github.com/chuanqin3/udacity-linux-configuration
+- https://github.com/iliketomatoes/linux_server_configuration
+- https://github.com/ddavignon/linux-server-configuration
+- https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers
+- https://linuxize.com/post/how-to-create-a-sudo-user-on-ubuntu/#disqus_thread
+- http://manpages.ubuntu.com/manpages/xenial/en/man5/sshd_config.5.html
+- https://www.digitalocean.com/community/tutorials/how-to-tune-your-ssh-daemon-configuration-on-a-linux-vpsv
+- 
