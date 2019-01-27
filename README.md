@@ -9,7 +9,7 @@ This is an activity related to Full Stack Nanodegree with Udacity.
 - Create AWS Ubuntu 16.04 Instance	
 - Enable Port 2200, 123, 80: Networking-->Add another	
 
-##Startups setup:
+## Startups setup:
 - download update: `sudo apt-get update`
 - update the server: `apt-get dist-upgrade`
 - install apache2:`sudo apt-get install apache2`
@@ -21,7 +21,7 @@ This is an activity related to Full Stack Nanodegree with Udacity.
 - install finger:`sudo apt-get install finger`
 - set date and time: `sudo dpkg-reconfigure tzdata`
 
-##Users Access Control
+## Users Access Control
 - add user: `sudo adduser grader`
 - give grader sudo privilege: `sudo usermod -aG sudo student`
 - locally do this, to create keys: `ssh-keygen`
@@ -35,7 +35,7 @@ This is an activity related to Full Stack Nanodegree with Udacity.
 - force users to login only using the key pair, change PasswordAuthentication from yes to no : `sudo nano /etc/ssh/sshd_config` 
 - `sudo service ssh restart `
 
-##Fire Wall configuration
+## Fire Wall configuration
 - change port 22 to 2200: `sudo vim /etc/ssh/sshd_config`
 - `sudo ufw default deny incoming `
 - `sudo ufw default allow outgoing`
@@ -45,7 +45,7 @@ This is an activity related to Full Stack Nanodegree with Udacity.
 - `sudo ufw enable`
 - `sudo service ssh restart `
 
-##database configuration
+## Database configuration
 - sudo su - postgres
 - CREATE USER catalog WITH PASSWORD [your password];
 - ALTER USER catalog CREATEDB;
@@ -54,7 +54,7 @@ This is an activity related to Full Stack Nanodegree with Udacity.
 - REVOKE ALL ON SCHEMA public FROM public;
 - GRANT ALL ON SCHEMA public TO catalog;
 
-##Deploying Settings
+## Deploying Settings
 - go to www dir: `cd /var/www`
 - create catalog dir: `mkdir ItemCatalog`
 - go to catalog dir: `cd ItemCatalog`
@@ -105,7 +105,7 @@ application.secret_key = 'super_secret_key'`
 - Clone and setup your Item Catalog project from the Github repository you created earlier in this Nanodegree program.
 - Set it up in your server so that it functions correctly when visiting your server’s IP address in a browser.
 
-##Third party resources used:
+## Third party resources used:
 - https://github.com/chuanqin3/udacity-linux-configuration
 - https://github.com/iliketomatoes/linux_server_configuration
 - https://github.com/ddavignon/linux-server-configuration
